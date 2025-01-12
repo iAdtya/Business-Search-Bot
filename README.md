@@ -2,6 +2,12 @@
 
 This project is a microservice application designed to crawl the Florida Secretary of State website for publicly available business details. It consists of a backend service built with Python and Playwright, and a frontend application developed using ReactJS.
 
+## Output
+FRONTEND
+![FRONTEND](frontend.png)
+DATA-BASE
+![DATABASE](database.png)
+
 ## Setup Instructions
 
 ```sh
@@ -35,7 +41,10 @@ cp .env.example .env
    ```
    npm start
    ```
-
+## Postman Collection
+- Import Collection File in postman
+- Test the RESTAPI
+- 
 ## Usage
 
 - Use the frontend search form to input a business name.
