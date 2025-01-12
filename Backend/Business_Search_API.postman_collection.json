@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Business Search API",
+    "_postman_id": "12345678-1234-1234-1234-123456789012",
+    "description": "Collection to test Business Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/health",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Business Data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/getdata",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["getdata"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crawl Business Details",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"business_name\": \"Example Business\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/crawl/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["crawl"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
